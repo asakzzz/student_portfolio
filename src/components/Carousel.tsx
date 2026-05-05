@@ -10,7 +10,7 @@ export function Carousel() {
                 <div className="flex-[0_0_100%] min-w-0 bg-background h-full flex flex-col shrink-0">
 
                     <div className='flex flex-none grow'>
-                        <img src="https://asakzzz.github.io/portfolio/readme.png" className='w-full object-cover' />
+                        <img src="https://asakzzz.github.io/student_portfolio/readme.png" className='w-full object-cover' />
 
                         {/* <img src="/arch_cybers.png" className='object-contain' /> */}
                         {/* maybe take new screenshots of projects because diff resolutions might fuck up things */}
@@ -26,7 +26,7 @@ export function Carousel() {
                 <div className="flex-[0_0_100%] min-w-0 bg-background h-full flex flex-col shrink-0">
 
                     <div className='flex flex-none grow aspect-video'>
-                        <img src="https://asakzzz.github.io/portfolio/etodo_main.png" className='w-full object-cover' />
+                        <img src="https://asakzzz.github.io/student_portfolio/etodo_main.png" className='w-full object-cover' />
                         {/* <img src="/arch_back.png" className='' /> */}
                     </div>
 
@@ -38,7 +38,7 @@ export function Carousel() {
                 </div>
                 <div className="flex-[0_0_100%] min-w-0 bg-background h-full flex flex-col shrink-0 ">
                     <div className='flex flex-row h-[60%]'>
-                        <img src="https://asakzzz.github.io/portfolio/hyprland.png" alt="" className='object-fill' />
+                        <img src="https://asakzzz.github.io/student_portfolio/hyprland.png" alt="" className='object-fill' />
                     </div>
 
                     <div className="border-t border-b border-amber-50/60 p-3 mb-3.5">
@@ -50,7 +50,7 @@ export function Carousel() {
                 <div className="flex-[0_0_100%] min-w-0 bg-background h-full flex flex-col shrink-0">
 
                     <div className='flex flex-row h-[60%]'>
-                        <img src="https://asakzzz.github.io/portfolio/game.png" alt=" object-cover w-full " />
+                        <img src="https://asakzzz.github.io/student_portfolio/game.png" alt=" object-cover w-full " />
                     </div>
 
                     <div className="border-t border-b border-amber-50/60 p-3 mb-3.5 ">
