@@ -60,22 +60,22 @@ export default function Home() {
         </div>
       </section>
 
+      <ScrollReveal>
+
       <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3">MY GITHUB CONTRIBS</h1>
       <div className="ml-5 md:ml-9">
         <GitHubCal />
       </div>
 
+      </ScrollReveal>
 
 
 
-      {/* <ScrollReveal>
-      <p id="Contact" className=" mt-20 font-extrabold font-[geist] text-3xl mb-3">CONTACTS</p>
-      <div className="mt-5 mb-7 ml-3.5">
-        <Nav />
-      </div>
-       </ScrollReveal>  */}
+      <ScrollReveal>
       <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3">CONTACT ME DIRECTLY</h1>
       <ContactForm />
+
+      </ScrollReveal>
 
 
     </main>
