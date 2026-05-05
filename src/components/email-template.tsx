@@ -35,15 +35,15 @@ export default function ContactForm() {
   return (
     <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
       <label className='-mb-2'>Name</label>
-      <input type="text" name="user_name" required className="border p-2 text-white" />
+      <input type="text" name="user_name" required className="border p-2 text-white w-[95%]" />
       
       <label className='-mb-2'>Email</label>
-      <input type="email" name="user_email" required className="border p-2 text-white" />
+      <input type="email" name="user_email" required className="border p-2 text-white w-[95%]" />
       
       <label className='-mb-2'>Message</label>
-      <textarea name="message" required className="border p-2 text-white" />
+      <textarea name="message" required className="border p-2 text-white w-[95%]" />
       
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-800/60 transition">
+      <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-800/60 transition w-[95%]">
         Send Message
       </button>
     </form>

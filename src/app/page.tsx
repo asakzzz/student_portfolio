@@ -12,7 +12,7 @@ import { Carousel } from "@/components/Carousel";
 import Nav from "./nav";
 import dynamic from "next/dynamic";
 import ContactForm from "@/components/email-template";
-const GitHubCal = dynamic( () => import ("@/components/GithubCalender").then((mod)=>mod.GitHubCal), {ssr:false});
+const GitHubCal = dynamic(() => import("@/components/GithubCalender").then((mod) => mod.GitHubCal), { ssr: false });
 
 
 
@@ -29,22 +29,20 @@ export default function Home() {
       <title>My portfolio</title>
       <Header />
       <ScrollReveal>
-      <section id="Me" className="h-75">
-        <div className=" sticky top-0">
+        <section id="Me" className="h-62 lg:ml-3 mb-15 md:mb-0">
           <div className=" flex flex-col mb-2 mt-15">
             <h1 className="font-extrabold font-[geist] text-3xl mb-3">ABOUT ME</h1>
-            <div>
-              <p className=" flex-1 text-2xl text-amber-50/90 font-[geist]">Who I am</p>
-              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 mb-5 ml-3.5">I'm a first year student at <a className="text-amber-50 font-bold" href="https://www.epitech.eu/">EPITECH</a>. I love programming and technology overall.</p>
+            <div className="ml-5">
+              <p className=" flex-1 text-2xl text-amber-50/90 font-[geist] ">Who I am</p>
+              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 mb-5">I'm a first year student at <a className="text-amber-50 font-bold" href="https://www.epitech.eu/">EPITECH</a>. I love programming and technology overall.</p>
             </div>
 
-            <div>
+            <div className="ml-5">
               <p className=" flex-1 text-2xl text-amber-50/90 font-[geist]">What I study</p>
-              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 mb-5 ml-3.5">As a freshman, I study cybersecurity, AI (data analyzing, models) and Web development (frontend/backend) </p>
+              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 md:mb-5">As a freshman, I study cybersecurity, AI (data analyzing, models) and Web development (frontend/backend) </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </ScrollReveal>
 
       {/* talk about who I am and personality */}
@@ -52,15 +50,21 @@ export default function Home() {
       {/* add picture of myself */}
       <section className="h-full">
         <div className="sticky ">
-          <div id="Work" className="font-extrabold font-[geist] text-3xl mb-3"><h1>MY WORK (give the carousel a try :) )</h1></div>
+          <div id="Work" className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3"><h1>MY WORK (give the carousel a try :) )</h1></div>
           <ScrollReveal>
-          <Carousel />
+            <div className="w-full mb-10 md:mb-0">
+              <Carousel />
+
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3">MY GITHUB CONTRIBS</h1>
+      <div className="ml-5 md:ml-9">
+        <GitHubCal />
+      </div>
 
-      <GitHubCal />
 
 
 
@@ -70,8 +74,8 @@ export default function Home() {
         <Nav />
       </div>
        </ScrollReveal>  */}
-      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-30">CONTACT ME DIRECTLY</h1>
-       <ContactForm/>
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3">CONTACT ME DIRECTLY</h1>
+      <ContactForm />
 
 
     </main>

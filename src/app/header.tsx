@@ -20,7 +20,6 @@ export default function Header() {
                 <div className="flex flex-1 justify-center">
                 </div>
                 <label htmlFor="toggle" className="flex flex-1 justify-end items-center cursor-pointer">
-                    <p className="font-sans text-sm mr-7 text-white/60">Click on meeee! →</p>
                     <p className="font-sans text-sm mr-7">Menu</p>
                 </label>
             </header>

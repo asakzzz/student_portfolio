@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 export function Carousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true })
     return (
-        <div className="overflow-hidden bg-background w-[80%] md:w-[60%] h-[60%]" ref={emblaRef}>
+        <div className="overflow-hidden bg-background w-[90%] md:w-[70%] h-[60%] mx-auto" ref={emblaRef}>
             <div className="flex">
                 <div className="flex-[0_0_100%] min-w-0 bg-background h-full flex flex-col shrink-0">
 
