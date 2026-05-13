@@ -34,7 +34,7 @@ export default function Nav() {
 
                 );
             })}
-            <a href="https://github.com/asakzzz/Leo Girard CV-1.pdf" download="filename" className="text-xl text-amber-50/90 font-[geist] mt-5">Download CV here  &lt;---</a>
+            <a href="https://asakzzz.github.io/student_portfolio/Leo_Girard_CV-1.pdf" download="filename" className="text-xl text-amber-50/90 font-[geist] mt-5">Download CV here  &lt;---</a>
 
         </nav>
     )
