@@ -25,16 +25,16 @@ const montserrat = Montserrat({
 
 export default function Home() {
   return (
-    <main className="ml-3">
+    <main className="md:ml-3">
       <title>My portfolio</title>
       <Header />
       <ScrollReveal>
         <section id="Me" className="h-62 lg:ml-3 mb-15 md:mb-0">
-          <div className=" flex flex-col mb-2 mt-15">
+          <div className=" flex flex-col items-center md:items-start mb-2 mt-15">
             <h1 className="font-extrabold font-[geist] text-3xl mb-3">ABOUT ME</h1>
             <div className="ml-5">
               <p className=" flex-1 text-2xl text-amber-50/90 font-[geist] ">Who I am</p>
-              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 mb-5">I'm a first year student at <a className="text-amber-50 font-bold" href="https://www.epitech.eu/">EPITECH</a>. I love programming and technology overall.</p>
+              <p className=" flex-2 font-[geist] text-amber-50/70 mr-2 mb-5">I'm a first year student at <a className="text-purple-700 font-bold" href="https://www.epitech.eu/">EPITECH</a>. I love programming and technology overall.</p>
             </div>
 
             <div className="ml-5">
@@ -46,7 +46,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* add picture of myself */}
-      <section className="h-full">
+      <section className="h-full ml-4">
         <div className="sticky ">
           <div id="work" className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3"><h1>MY WORK (give the carousel a try :) )</h1></div>
           <ScrollReveal>
@@ -60,7 +60,7 @@ export default function Home() {
 
       <ScrollReveal>
 
-      <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3" >MY GITHUB CONTRIBS</h1>
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3 ml-4" >MY GITHUB CONTRIBS</h1>
       <div className="ml-5 md:ml-9">
         <GitHubCal />
       </div>
@@ -70,7 +70,9 @@ export default function Home() {
 
 
       <ScrollReveal>
-      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3" id = 'contact'>CONTACT ME DIRECTLY</h1>
+        <div>
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3 ml-4 flex flex-col items-center md:items-start" id = 'contact'>CONTACT ME DIRECTLY</h1>
+        </div>
       <ContactForm />
 
       </ScrollReveal>
