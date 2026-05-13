@@ -45,12 +45,10 @@ export default function Home() {
         </section>
       </ScrollReveal>
 
-      {/* talk about who I am and personality */}
-      {/* talk about what I can do and what i've done in the past to prove my comp */}
       {/* add picture of myself */}
       <section className="h-full">
         <div className="sticky ">
-          <div id="Work" className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3"><h1>MY WORK (give the carousel a try :) )</h1></div>
+          <div id="work" className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3"><h1>MY WORK (give the carousel a try :) )</h1></div>
           <ScrollReveal>
             <div className="w-full mb-10 md:mb-0">
               <Carousel />
@@ -62,7 +60,7 @@ export default function Home() {
 
       <ScrollReveal>
 
-      <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3">MY GITHUB CONTRIBS</h1>
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 lg:ml-3" >MY GITHUB CONTRIBS</h1>
       <div className="ml-5 md:ml-9">
         <GitHubCal />
       </div>
@@ -72,7 +70,7 @@ export default function Home() {
 
 
       <ScrollReveal>
-      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3">CONTACT ME DIRECTLY</h1>
+      <h1 className="font-extrabold font-[geist] text-3xl mb-3 mt-15 lg:ml-3" id = 'contact'>CONTACT ME DIRECTLY</h1>
       <ContactForm />
 
       </ScrollReveal>
