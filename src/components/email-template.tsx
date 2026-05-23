@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 p-5 -ml-3">
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 p-3.5 ">
       <label className='-mb-3'>Name</label>
       <input type="text" name="user_name" required className="border p-2 md:p-3 text-white w-full" />
       
